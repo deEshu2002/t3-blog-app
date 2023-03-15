@@ -6,7 +6,7 @@ export default function Bloglist() {
   return (
     <div id="blog-list">
       {blogList.map((elem, idx) => {
-        return <BlogCard/>;
+        return <article key={idx}><BlogCard/></article>;
       })}
     </div>
   );

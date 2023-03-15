@@ -11,7 +11,7 @@ export default function SortMethods() {
   ) {
     const currentActive = document.querySelector(".sort-button.active");
     if (indicatorRef.current) {
-      (indicatorRef.current as HTMLDivElement).style.top = `${idx * 2.4}rem`;
+      (indicatorRef.current as HTMLDivElement).style.top = `${idx * 2.6}rem`;
     }
     currentActive?.classList.remove("active");
     (e.target as HTMLButtonElement).classList.add("active");

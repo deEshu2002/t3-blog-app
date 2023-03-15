@@ -244,6 +244,7 @@ header .container .overlay.active {
   color: rgb(var(--foreground-rgb));
 }
 
+
 .current-indicator {
   position: absolute;
   top: 0;
@@ -259,6 +260,7 @@ header .container .overlay.active {
   font-size: 1.25rem;
   text-align: left;
   color: rgba(var(--foreground-rgb), 0.55);
+  background-color: transparent;
 }
 
 .sort-button:hover {
@@ -285,15 +287,16 @@ header .container .overlay.active {
 
 #blog-list>* {
   margin: .5rem;
+  height: auto;
 }
 
 #blog-list article:first-child {
-  grid-area: 1/ 1/ 3 /5;
+  grid-area: 1 / 1/ 3/ 5;
+}
+#blog-list article:nth-child(2){
+  grid-area: 1 / 5/ 2/ 7;
 }
 
-#blog-list article:nth-child(2) {
-  grid-area: 1/ 6/ 2 /8;
-}
 
 /* card Styling */
 

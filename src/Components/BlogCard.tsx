@@ -1,6 +1,6 @@
 export default function BlogCard() {
   return (
-    <article>
+    <>
       <div className="article-wrapper">
         <figure>
           <img src="https://picsum.photos/id/1011/800/450" alt="" />
@@ -37,6 +37,6 @@ export default function BlogCard() {
           </div>
         </div>
       </div>
-    </article>
+    </>
   );
 }

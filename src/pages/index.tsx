@@ -8,8 +8,7 @@ import { api } from "@/utils/api";
 
 export default function Home() {
   
-    // const insertPost = api.blogpost.hello.useQuery({text:"deeshu"});
-    // console.log(insertPost.data);
+    const {data,isLoading} = api.blogpost.getAll.useQuery();
 
   return (
     <>
