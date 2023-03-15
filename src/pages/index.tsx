@@ -8,7 +8,6 @@ import { api } from "@/utils/api";
 
 export default function Home() {
   
-    const {data,isLoading} = api.blogpost.getAll.useQuery();
 
   return (
     <>
